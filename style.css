@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+  background: #fff2ec;
+  scroll-behavior: smooth;
+}
+
+.nav-bar{
+  align-items: center;
+  padding: 20px 50px;
+  background: #bfa2db;
+  color: white;
+}
+
+header{
+  position: s;
+  top: 0;
+}
+
+.nav-bar .logo{
+  font-size: 2rem;
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover{
+  color: #e6c7a9;
+}
+
+.banner{
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  overflow: hidden;
+}
+
+.bg-image{
+  position: absolute;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  background: url('./Needs for a Glowy Skin.jpeg') no-repeat center center/cover;
+  z-index: 0;
+  filter: brightness(0.3);
+}
+
+.banner-text{
+  position: relative;
+  z-index: 1;
+}
+
+.banner-text h1{
+  font-size: 1.7rem;
+  color: #fff;
+  opacity: 0;
+  animation: fadein 1.5s forwards;
+}
+
+.banner-text p{
+  font-size: 0.95rem;
+  margin: 0.5rem 0 1rem;
+  color: #e6c7a9;
+  opacity: 0;
+  animation: fadein 1.5s forwards;
+}
+
+@keyframes fadein{
+  to{
+    opacity: 1;
+  }
+  from {
+  opacity: 0;
+}
+}
+
+.banner-btn{
+  display: inline-block;
+  background-color: #9f86c0;
+  color: #fff ;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 0.8rem 1.5rem;
+}
+
+.product-display{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px;
+  margin-bottom: 20px;
+}
+
+.gallery{
+  flex: 1;
+  position: relative;
+}
+
+.gallery input{
+  display: none;
+}
+
+.images{
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 60%;
+  object-fit: contain;
+  margin-left: 60px;
+}
+
+.image{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#img1:checked ~ .images #slide1,
+#img2:checked ~ .images #slide2,
+#img3:checked ~ .images #slide3,
+#img4:checked ~ .images #slide4,
+#img5:checked ~ .images #slide5{
+  display: block;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnails{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.thumbnais label{
+  cursor: pointer;
+}
+
+.thumbnails img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.description{
+  background: #F8E8EE;
+  padding: 20px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.description h1{
+  color: #3E2C41;
+  padding-top: 20px;
+}
+
+.description p{
+  padding-top: 20px;
+  color: #444444;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.why-us{
+  background-color: #FbeCFA;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 25px;
+  
+}
+
+.why-us h1 {
+  color: #3E2C41;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+
+.features{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.contact {
+  background-color: #F3CFA;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact h2 {
+  color: #3E2C41;
+  font-size: px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #E6C7A9;
+  outline: none;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999999;
+}
+
+.btn {
+  background-color: #3E2C41;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #986C0;
+}
+
+footer{
+  background: #BFA2DB;
+  color: #fff2ec;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a{
+  text-decoration: none;
+  color: #3E2C41;
+}
+
+span{
+  color: white;
+}
